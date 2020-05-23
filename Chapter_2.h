@@ -529,9 +529,47 @@ void Ch2_Programming_Project_14() {
 }
 
 void Ch2_Programming_Project_15() {
+	double length_initial = 0.0; //L-zero
+	double displacement_meters = 0.0; //L-triangle
+	double temperature_celsius_change = 0.0; //T-triangle
+	double coefficient_linear_expression = 0.0; //a
 
+	coefficient_linear_expression = inputDouble("Enter coefficient for linear expression: ", true);
+	displacement_meters = inputDouble("Enter displacement length (meters): ", true);
+	temperature_celsius_change = inputDouble("Enter temperature change (celsius): ", true);
+
+	cout << (length_initial > 0 ? "The material will expand by the displacement in meters " : "The material will contract by ") << length_initial;
 }
 
 void Ch2_Programming_Project_16(){
-	
+	char ans = ' ';
+
+	ans = inputChar("(M)ale or (F)emale? ", 'm', 'f');
+
+	if (ans == 'm'){
+		ans = inputChar("(H)ero or (V)illain? ", 'h', 'v');
+		if (ans == 'v'){
+			cout << "You should get a mohawk";
+		}
+		else{
+			ans = inputChar("S(t)eak or S(u)shi? ", 't', 'u');
+			if(ans == 't'){
+				cout << "You should get a flat top";
+			}
+			else cout << "You should get a pompadour";
+		}
+	}
+	else{
+		ans = inputChar("(H)ero or (V)illain? ", 'h', 'v');
+		if (ans == 'v'){
+			cout << "You should get a mohawk";
+		}
+		else{
+			ans = inputChar("(A)nime or (C)artoon? ", 'a', 'c');
+			if(ans == 'a'){
+				cout << "You should go with bangs";
+			}
+			else cout << "You should get a bob";
+		}
+	}
 }
