@@ -10,6 +10,7 @@
 #include "input_validation.h"
 #include "Chapter_1.h"
 #include "Chapter_2.h"
+#include "Chapter_3.h"
 
 using namespace std;
 
@@ -34,6 +35,7 @@ int main(int argc, char** argv) {
         switch (atoi(option)) {
         case 1: Chapter_1(); break;
         case 2: Chapter_2(); break;
+        case 3: Chapter_3(); break;
         case 0: exit(0);
         default: break;
         }
