@@ -14,7 +14,7 @@
 
 using namespace std;
 
-int main(int argc, char** argv) {
+int main() {
 
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
@@ -25,6 +25,8 @@ int main(int argc, char** argv) {
         cout << "==============================" << endl;
         cout << "1. Chapter_1" << endl;
         cout << "2. Chapter_2" << endl;
+        cout << "3. Chapter_3" << endl;
+
         cout << "0. Exit" << endl;
         cout << "==============================" << endl;
         cout << "Option : ";
