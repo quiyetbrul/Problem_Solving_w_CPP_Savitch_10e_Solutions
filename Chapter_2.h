@@ -198,6 +198,11 @@ void Ch2_Practice_Program_5() {
 	cout << "Sphere volume: " << sphere_volume << endl;
 }
 
+double compute_lab(double mass_sweetner, double mass_mouse, double mass_dieter)
+{
+	return 0.0;
+}
+
 void Ch2_Programming_Project_1() {
 	char ans = ' ';
 	double mass_sweetner = 0.0, mass_mouse = 0.0, mass_dieter = 0.0, number_soda = 0.0;
