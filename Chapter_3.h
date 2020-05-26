@@ -2,7 +2,7 @@
 #include <cmath>
 #include <string>
 #include <vector>
-#include "input_validation.h"
+//#include "input_validation.h"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ int Chapter_3() {
 		cout << endl;
 
 		switch (atoi(option)) {
-		// case 1: Ch3_Practice_Program_1(); break;
+			// case 1: Ch3_Practice_Program_1(); break;
 		case 0: exit(0);
 		default: break;
 		}
@@ -33,6 +33,6 @@ int Chapter_3() {
 	return Chapter_3();
 }
 
-void Ch3_Practice_Program_1(){
-    
+void Ch3_Practice_Program_1() {
+
 }
