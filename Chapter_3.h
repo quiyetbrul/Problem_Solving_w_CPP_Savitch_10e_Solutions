@@ -94,5 +94,9 @@ void Ch3_Practice_Program_2() {
 }
 
 void Ch3_Practice_Program_3() {
+  string birth_month;
+  int birth_day = 0;
 
+  inputString("Enter birth month: ", birth_month);
+  birth_day = inputInteger("Enter birth date: ", true);
 }
