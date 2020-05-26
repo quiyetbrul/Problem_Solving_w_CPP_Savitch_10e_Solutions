@@ -1,4 +1,4 @@
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/quiyetbrul/Problem_Solving_w_CPP_Savitch_10e_Solutions/blob/master/LICENSE) [![Open Source Helpers](https://www.codetriage.com/quiyetbrul/problem_solving_w_cpp_savitch_10e_solutions/badges/users.svg)](https://www.codetriage.com/quiyetbrul/problem_solving_w_cpp_savitch_10e_solutions)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Open Source Helpers](https://www.codetriage.com/quiyetbrul/problem_solving_w_cpp_savitch_10e_solutions/badges/users.svg)](https://www.codetriage.com/quiyetbrul/problem_solving_w_cpp_savitch_10e_solutions)
 
 
 <h1 align="center">Welcome to Problem_Solving_w_CPP_Savitch_10e_Solutions 👋</h1>
