@@ -1,10 +1,3 @@
-/*
- * File:   main.cpp
- * Author: quiyetbrul
- *
- * Created on May 12, 2020, 8:34 AM
- */
-
 #include <cstdlib>
 #include <iostream>
 #include "input_validation.h"
@@ -25,7 +18,7 @@ int main(int argc, char** argv) {
         cout << "==============================" << endl;
         cout << "1. Chapter_1" << endl;
         cout << "2. Chapter_2" << endl;
-	cout << "3. Chapter_3" << endl;
+	      cout << "3. Chapter_3" << endl;
         cout << "0. Exit" << endl;
         cout << "==============================" << endl;
         cout << "Option : ";

@@ -30,7 +30,7 @@ void Ch2_Programming_Project_14();
 void Ch2_Programming_Project_15();
 void Ch2_Programming_Project_16();
 
-// some IDE/editor supports M_PI definition
+// some IDE/editor does not support M_PI definition
 //const double M_PI = 3.14159265359;
 
 int Chapter_2() {
@@ -171,13 +171,13 @@ void Ch2_Practice_Program_4() {
 	//user's name, a food, a number between 100-120,
 	//an adjective, a color, an animal
 
-	instructor_name = inputString("Enter instructor's surname: ", instructor_name);
-	user_name = inputString("Enter your name: ", user_name);
-	food = inputString("Enter a food: ", food);
-	number = inputInteger("Enter a number: ", 100, 120);
-	adjective = inputString("Enter an adjective: ", adjective);
-	color = inputString("Enter a color: ", color);
-	animal = inputString("Enter an animal: ", animal);
+	inputString("Enter instructor's surname: ", instructor_name);
+	inputString("Enter your name: ", user_name);
+	inputString("Enter a food: ", food);
+	inputInteger("Enter a number: ", 100, 120);
+	inputString("Enter an adjective: ", adjective);
+	inputString("Enter a color: ", color);
+	inputString("Enter an animal: ", animal);
 
 	//display message
 	cout << endl << "Dear Instructor " << instructor_name << "," << endl

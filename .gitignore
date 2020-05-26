@@ -381,6 +381,7 @@ healthchecksdb
 *.exe
 *.out
 *.app
+*.replit
 
 ### macOS ###
 # General
