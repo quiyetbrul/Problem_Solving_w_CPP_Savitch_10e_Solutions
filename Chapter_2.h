@@ -31,7 +31,7 @@ void Ch2_Programming_Project_15();
 void Ch2_Programming_Project_16();
 
 // some IDE/editor supports M_PI definition
-const double M_PI = 3.14159265359;
+//const double M_PI = 3.14159265359;
 
 int Chapter_2() {
 	do {
