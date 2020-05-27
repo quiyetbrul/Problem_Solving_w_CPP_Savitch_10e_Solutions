@@ -2,7 +2,7 @@
 #include <cmath>
 #include <string>
 #include <vector>
-//#include "input_validation.h"
+// #include "input_validation.h"
 
 using namespace std;
 
@@ -10,9 +10,10 @@ void Ch3_Practice_Program_1();
 void Ch3_Practice_Program_2();
 void Ch3_Practice_Program_3();
 
-
-int Chapter_3() {
-	do {
+int Chapter_3()
+{
+	do
+	{
 		cout << endl;
 
 		cout << "Chapter 3 Solutions" << endl;
@@ -28,52 +29,72 @@ int Chapter_3() {
 
 		cout << endl;
 
-		switch (atoi(option)) {
-		case 1: Ch3_Practice_Program_1(); break;
-		case 2: Ch3_Practice_Program_2(); break;
-		case 3: Ch3_Practice_Program_3(); break;
-		case 0: exit(0);
-		default: break;
+		switch (atoi(option))
+		{
+		case 1:
+			Ch3_Practice_Program_1();
+			break;
+		case 2:
+			Ch3_Practice_Program_2();
+			break;
+		case 3:
+			Ch3_Practice_Program_3();
+			break;
+		case 0:
+			exit(0);
+		default:
+			break;
 		}
 	} while (true);
 
 	return Chapter_3();
 }
 
-void Ch3_Practice_Program_1() {
+void Ch3_Practice_Program_1()
+{
 	char user_1 = ' ', user_2 = ' ', ans = ' ';
 	int score_1 = 0, score_2 = 0;
 
-	do {
+	do
+	{
 		user_1 = inputChar("User_1: ", "prs");
 		user_2 = inputChar("User_2: ", "prs");
 
 		cout << endl;
 		cout << "===OUTCOME===" << endl;
 
-		if (user_1 == user_2) {
-			cout << "Draw" << endl << endl;
+		if (user_1 == user_2)
+		{
+			cout << "Draw" << endl
+				 << endl;
 		}
-		else if (user_1 == 'r' && user_2 == 's' || user_1 == 'p' && user_2 == 'r' || user_1 == 's' && user_2 == 'p') {
+		else if (user_1 == 'r' && user_2 == 's' || user_1 == 'p' && user_2 == 'r' || user_1 == 's' && user_2 == 'p')
+		{
 			score_1++;
-			cout << "User_1 won" << endl << endl;
+			cout << "User_1 won" << endl
+				 << endl;
 		}
-		else {
+		else
+		{
 			score_2++;
-			cout << "User_2 won" << endl << endl;
+			cout << "User_2 won" << endl
+				 << endl;
 		}
 
 		cout << "===SCORE===" << endl;
 		cout << "USER_1: " << score_1 << endl;
-		cout << "USER_2: " << score_2 << endl << endl;
+		cout << "USER_2: " << score_2 << endl
+			 << endl;
 
 		ans = inputChar("Repeat? ", 'y', 'n');
 	} while (ans == 'y');
 }
 
-void Ch3_Practice_Program_2() {
+void Ch3_Practice_Program_2()
+{
 	char ans = ' ';
-	do {
+	do
+	{
 		double account_balance = inputDouble("Enter account balance: ", true);
 		double interest = 0.0;
 
@@ -93,10 +114,111 @@ void Ch3_Practice_Program_2() {
 	} while (ans == 'y');
 }
 
-void Ch3_Practice_Program_3() {
-  string birth_month;
-  int birth_day = 0;
+void Ch3_Practice_Program_3()
+{
+	int month;
+	int day = 0;
 
-  inputString("Enter birth month: ", birth_month);
-  birth_day = inputInteger("Enter birth date: ", true);
+	month = inputInteger("Enter birth month: ", 1, 12);
+	day = inputInteger("Enter birth date: ", true);
+
+	string astro_sign = "";
+
+	if (month == 12)
+	{
+
+		if (day < 22)
+			astro_sign = "Sagittarius";
+		else
+			astro_sign = "capricorn";
+	}
+
+	else if (month == 1)
+	{
+		if (day < 20)
+			astro_sign = "Capricorn";
+		else
+			astro_sign = "aquarius";
+	}
+
+	else if (month == 2)
+	{
+		if (day < 19)
+			astro_sign = "Aquarius";
+		else
+			astro_sign = "pisces";
+	}
+
+	else if (month == 3)
+	{
+		if (day < 21)
+			astro_sign = "Pisces";
+		else
+			astro_sign = "aries";
+	}
+	else if (month == 4)
+	{
+		if (day < 20)
+			astro_sign = "Aries";
+		else
+			astro_sign = "taurus";
+	}
+
+	else if (month == 5)
+	{
+		if (day < 21)
+			astro_sign = "Taurus";
+		else
+			astro_sign = "gemini";
+	}
+
+	else if (month == 6)
+	{
+		if (day < 21)
+			astro_sign = "Gemini";
+		else
+			astro_sign = "cancer";
+	}
+
+	else if (month == 7)
+	{
+		if (day < 23)
+			astro_sign = "Cancer";
+		else
+			astro_sign = "leo";
+	}
+
+	else if (month == 8)
+	{
+		if (day < 23)
+			astro_sign = "Leo";
+		else
+			astro_sign = "virgo";
+	}
+
+	else if (month == 9)
+	{
+		if (day < 23)
+			astro_sign = "Virgo";
+		else
+			astro_sign = "libra";
+	}
+
+	else if (month == 10)
+	{
+		if (day < 23)
+			astro_sign = "Libra";
+		else
+			astro_sign = "scorpio";
+	}
+
+	else if (month == 11)
+	{
+		if (day < 22)
+			astro_sign = "scorpio";
+		else
+			astro_sign = "sagittarius";
+	}
+
+	cout << "Zodiac sign: " << astro_sign << endl;
 }
