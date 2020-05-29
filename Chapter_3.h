@@ -9,6 +9,7 @@ using namespace std;
 void Ch3_Practice_Program_1();
 void Ch3_Practice_Program_2();
 void Ch3_Practice_Program_3();
+void Ch3_Practice_Program_4();
 
 int Chapter_3()
 {
@@ -21,6 +22,7 @@ int Chapter_3()
 		cout << "1. Practice_Program_1" << endl;
 		cout << "2. Practice_Program_2" << endl;
 		cout << "3. Practice_Program_3" << endl;
+		cout << "4. Practice_Program_4" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		cout << "Option : ";
@@ -39,6 +41,9 @@ int Chapter_3()
 			break;
 		case 3:
 			Ch3_Practice_Program_3();
+			break;
+		case 4:
+			Ch3_Practice_Program_4();
 			break;
 		case 0:
 			exit(0);
@@ -114,25 +119,24 @@ void Ch3_Practice_Program_2()
 	} while (ans == 'y');
 }
 
+string astro_sign = "";
+
 void Ch3_Practice_Program_3()
 {
+	//im too lazy to do the cusp part of this task.
 	int month;
 	int day = 0;
 
 	month = inputInteger("Enter birth month: ", 1, 12);
-	day = inputInteger("Enter birth date: ", true);
-
-	string astro_sign = "";
+	day = inputInteger("Enter birth date: ", 1, 31);
 
 	if (month == 12)
 	{
-
 		if (day < 22)
 			astro_sign = "Sagittarius";
 		else
 			astro_sign = "capricorn";
 	}
-
 	else if (month == 1)
 	{
 		if (day < 20)
@@ -140,7 +144,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "aquarius";
 	}
-
 	else if (month == 2)
 	{
 		if (day < 19)
@@ -148,7 +151,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "pisces";
 	}
-
 	else if (month == 3)
 	{
 		if (day < 21)
@@ -163,7 +165,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "taurus";
 	}
-
 	else if (month == 5)
 	{
 		if (day < 21)
@@ -171,7 +172,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "gemini";
 	}
-
 	else if (month == 6)
 	{
 		if (day < 21)
@@ -179,7 +179,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "cancer";
 	}
-
 	else if (month == 7)
 	{
 		if (day < 23)
@@ -187,7 +186,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "leo";
 	}
-
 	else if (month == 8)
 	{
 		if (day < 23)
@@ -195,7 +193,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "virgo";
 	}
-
 	else if (month == 9)
 	{
 		if (day < 23)
@@ -203,7 +200,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "libra";
 	}
-
 	else if (month == 10)
 	{
 		if (day < 23)
@@ -211,7 +207,6 @@ void Ch3_Practice_Program_3()
 		else
 			astro_sign = "scorpio";
 	}
-
 	else if (month == 11)
 	{
 		if (day < 22)
@@ -221,4 +216,16 @@ void Ch3_Practice_Program_3()
 	}
 
 	cout << "Zodiac sign: " << astro_sign << endl;
+}
+
+void Ch3_Practice_Program_4()
+{
+	const vector<string> FIRE {"Aries", "Leo", "Sagittarius"};
+	const vector<string> EARTH {"Taurus", "Virgo", "Capricorn"};
+	const vector<string> AIR {"Gemini", "Libra", "Aquarius"};
+	const vector<string> WATER {"Cancer", "Scorpio", "Pisces"};
+
+	cout << "You are compatible with the other ";
+
+
 }
