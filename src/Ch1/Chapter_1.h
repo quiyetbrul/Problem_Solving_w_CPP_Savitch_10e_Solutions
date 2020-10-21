@@ -36,7 +36,7 @@ int Chapter_1() {
 		cout << "11. Project_Program_5" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
-		int option = inputInteger("Option: ", true);
+		int option = inputInteger("Option: ", 0,11);
 
 		cout << endl;
 
