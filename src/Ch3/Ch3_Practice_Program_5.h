@@ -15,13 +15,13 @@ int isPrimeNumber(int n) {
 }
 
 void Ch3_Practice_Program_5(){
-    cout << "Printing all prime numbers from 0-dsff100:" << endl;
+    cout << "Printing all prime numbers from 0-100:" << endl;
 
     bool isPrime;
     for(int n = 2; n < 100; n++) {
         isPrime = isPrimeNumber(n);
 
-        if(isPrime == true)
-            cout<<n<<" ";
+        if(isPrime)
+           cout << n << " ";
     }
 }
