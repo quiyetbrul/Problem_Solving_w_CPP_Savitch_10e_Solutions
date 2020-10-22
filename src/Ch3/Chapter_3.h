@@ -25,6 +25,7 @@ int Chapter_3()
 		cout << "2. Practice_Program_2" << endl;
 		cout << "3. Practice_Program_3" << endl;
 		cout << "4. Practice_Program_4" << endl;
+		cout << "5. Practice_Program_5" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		cout << "Option : ";
@@ -45,12 +46,13 @@ int Chapter_3()
 		case 4:
 			Ch3_Practice_Program_4();
 			break;
+		case 5:
+			Ch3_Practice_Program_4();
+			break;
 		case 0:
 			exit(0);
 		default:
 			break;
 		}
 	} while (true);
-
-	return Chapter_3();
 }
