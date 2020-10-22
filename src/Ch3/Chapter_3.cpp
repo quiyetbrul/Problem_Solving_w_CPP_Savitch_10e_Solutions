@@ -7,6 +7,8 @@
 #include "Ch3_Practice_Program_2.h"
 #include "Ch3_Practice_Program_3.h"
 #include "Ch3_Practice_Program_4.h"
+#include "Ch3_Practice_Program_5.h"
+
 
 using namespace std;
 
@@ -26,7 +28,7 @@ int Chapter_3()
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		cout << "Option : ";
-		int option = inputInteger("Option: ", 0, 4);
+		int option = inputInteger("Option: ", 0, 5);
 
 		cout << endl;
 
@@ -44,7 +46,7 @@ int Chapter_3()
 			Ch3_Practice_Program_4();
 			break;
 		case 5:
-			// Ch3_Practice_Program_5();
+			Ch3_Practice_Program_5();
 			break;
 		case 0:
 			exit(0);
