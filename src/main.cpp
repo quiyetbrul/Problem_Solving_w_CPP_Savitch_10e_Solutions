@@ -1,9 +1,12 @@
-#include <cstdlib>
 #include <iostream>
+#include <vector>
+
 #include "input_validation.h"
-#include "Chapter_1.h"
-#include "Chapter_2.h"
-#include "Chapter_3.h"
+#include "Ch2/retroactive_salary.h"
+
+#include "Ch1/Chapter_1.cpp"
+#include "Ch2/Chapter_2.cpp"
+#include "Ch3/Chapter_3.cpp"
 
 using namespace std;
 
@@ -21,17 +24,16 @@ int main(int argc, char** argv) {
 	    cout << "3. Chapter_3" << endl;
         cout << "0. Exit" << endl;
         cout << "==============================" << endl;
-        cout << "Option : ";
+        int option = inputInteger("Option: ", 0, 21);
 
-        char option[80];
-        cin >> option;
+		cout << endl;
 
-        switch (atoi(option)) {
+		switch (option) {
         case 1: Chapter_1(); break;
         case 2: Chapter_2(); break;
         case 3: Chapter_3(); break;
         case 0: exit(0);
-        default: break;
+        default: cout << "-- ERROR MAIN MENU --";break;
         }
     } while (true);
 
