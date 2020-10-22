@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
         case 2: Chapter_2(); break;
         case 3: Chapter_3(); break;
         case 0: exit(0);
-        default: cout << "-- ERROR MAIN MENU --";break;
+        default: cout << "-- ERROR MAIN MENU --" << endl;break;
         }
     } while (true);
 
