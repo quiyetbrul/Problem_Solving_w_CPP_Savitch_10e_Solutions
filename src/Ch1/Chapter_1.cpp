@@ -35,7 +35,6 @@ int Chapter_1() {
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		int option = inputInteger("Option: ", 0,11);
-		// int option = 0; cin >> option;
 		cout << endl;
 
 		switch (option) {
@@ -51,7 +50,7 @@ int Chapter_1() {
 		case 10: Ch1_Programming_Projects_4(); break;
 		case 11: Ch1_Programming_Projects_5(); break;
 		case 0: exit(0);
-		default: break;
+		default: cout << "Ch1_Menu: ERROR SELECTION" << endl; break;
 		}
 	} while (true);
 }
