@@ -85,9 +85,8 @@ int Chapter_2() {
 		case 19: Ch2_Programming_Project_14(); break;
 		case 20: Ch2_Programming_Project_15(); break;
 		case 21: Ch2_Programming_Project_16(); break;
-
 		case 0: exit(0);
-		default: break;
+		default: cout << "Ch2_Menu: ERROR SELECTION" << endl; break;
 		}
 	} while (true);
 }
