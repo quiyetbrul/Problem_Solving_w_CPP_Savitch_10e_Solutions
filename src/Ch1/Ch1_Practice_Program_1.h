@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 void Ch1_Practice_Program_1() {
 	int integerOne, integerTwo, integerSum, integerProduct;
 

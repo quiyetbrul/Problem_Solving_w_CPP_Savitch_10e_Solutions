@@ -1,7 +1,5 @@
 #include <iostream>
 
-
-
 using namespace std;
 
 void Ch2_Practice_Program_4() {

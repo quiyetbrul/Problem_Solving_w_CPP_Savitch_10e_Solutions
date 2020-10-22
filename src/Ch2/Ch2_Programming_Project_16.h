@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 using namespace std;
 
 void Ch2_Programming_Project_16(){
