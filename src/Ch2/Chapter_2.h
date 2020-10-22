@@ -93,8 +93,6 @@ int Chapter_2() {
 		default: break;
 		}
 	} while (true);
-
-	return Chapter_2();
 }
 
 void retroactive_salary(int months, double current_annual_salary) {
