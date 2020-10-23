@@ -10,6 +10,7 @@
 #include "Ch3_Practice_Program_5.h"
 #include "Ch3_Practice_Program_6.h"
 #include "Ch3_Practice_Program_7.h"
+#include "Ch3_Programming_Program_1.h"
 
 using namespace std;
 
@@ -43,6 +44,7 @@ int Chapter_3()
 		case 5: Ch3_Practice_Program_5(); break;
 		case 6: Ch3_Practice_Program_6(); break;
 		case 7: Ch3_Practice_Program_7(); break;
+		case 8: Ch3_Programming_Program_1(); break;
 		case 0: exit(0);
 		default: cout << "Ch3_Menu: ERROR SELECTION" << endl; break;
 		}
