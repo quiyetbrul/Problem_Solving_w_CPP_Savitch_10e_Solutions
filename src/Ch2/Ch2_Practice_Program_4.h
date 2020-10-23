@@ -15,13 +15,13 @@ void Ch2_Practice_Program_4() {
 	//user's name, a food, a number between 100-120,
 	//an adjective, a color, an animal
 
-	inputString("Enter instructor's surname: ", instructor_name);
-	inputString("Enter your name: ", user_name);
-	inputString("Enter a food: ", food);
+	cout << "Enter instructor's surname: "; cin >>instructor_name;
+	cout << "Enter your name: "; cin >> user_name;
+	cout << "Enter a food: "; cin >>  food;
 	inputInteger("Enter a number: ", 100, 120);
-	inputString("Enter an adjective: ", adjective);
-	inputString("Enter a color: ", color);
-	inputString("Enter an animal: ", animal);
+	cout << "Enter an adjective: "; cin >>  adjective;
+	cout << "Enter a color: "; cin >>  color;
+	cout << "Enter an animal: "; cin >>  animal;
 
 	//display message
 	cout << endl << "Dear Instructor " << instructor_name << "," << endl
