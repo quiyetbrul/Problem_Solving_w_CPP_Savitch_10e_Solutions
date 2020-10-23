@@ -11,6 +11,8 @@ void Ch3_Practice_Program_3()
 	int day = 0;
 
 	month = inputInteger("Enter birth month: ", 1, 12);
+
+	//it would be nice to have a validation for the months with fewer than 31 days
 	day = inputInteger("Enter birth date: ", 1, 31);
 
 	if (month == 12)
