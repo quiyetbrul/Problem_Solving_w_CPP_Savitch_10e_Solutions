@@ -12,7 +12,7 @@
 using namespace std;
 
 //return an input string
-
+//this needs some work
 string inputString(string prompt, string input) {
     cout << prompt;
     cin >> input;
