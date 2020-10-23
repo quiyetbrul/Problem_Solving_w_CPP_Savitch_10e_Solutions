@@ -28,6 +28,7 @@ int Chapter_3()
 		cout << "5. Practice_Program_5" << endl;
 		cout << "6. Practice_Program_6" << endl;
 		cout << "7. Practice_Program_7" << endl;
+		cout << "8. Programming_Project_1" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		int option = inputInteger("Option: ", 0, 21);
