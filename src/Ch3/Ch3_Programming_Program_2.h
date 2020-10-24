@@ -4,28 +4,29 @@
 using namespace std;
 
 void Ch3_Programming_Program_2(){
-    double a = inputDouble("Enter a-value: ");
-    double b = inputDouble("Enter b-value: ");
-    double c = inputDouble("Enter c-value: ");
-    cout << endl;
+    double a = inputDouble("Enter the value of a: ");
+	double b = inputDouble("Enter the value of b: ");
+	double c = inputDouble("Enter the value of c: ");
 
-    double discriminant = 0, real_part = 0, imaginary_part = 0, x1 = 0, x2 = 0;
-    discriminant = pow(b,2) - 4 * a * c;
-    if(discriminant > 0){
-        x1 = (-b + sqrt(discriminant)) / (2*a);
-        x2 = (-b - sqrt(discriminant)) / (2*a);
-        cout << "Roots are real and different." << endl;
-        cout << "x1 = " << x1 << endl;
-        cout << "x2 = " << x2 << endl;
-    }else if (discriminant == 0){
-        cout << "Roots are real and same." << endl;
-        x1 = -b/(2*a);
-        cout << "x1 = x2 =" << x1 << endl;
-    }else{
-        real_part = -b / (2 * a);
-        imaginary_part =sqrt(-discriminant)/(2*a);
-        cout << "Roots are complex and different."  << endl;
-        cout << "x1 = " << real_part << "+" << imaginary_part << "i" << endl;
-        cout << "x2 = " << real_part << "-" << imaginary_part << "i" << endl;
-    }
+	double d = (pow(b, 2.0) - 4.0 * a*c); //d is discriminant
+	double positive_root = (((-b) + sqrt(d)) / (2.0 * a));
+	double negative_root = (((-b) - sqrt(d)) / (2.0 * a));
+
+	cout << "\nThe discriminant is " << d << ".\n";
+
+	if (d == 0)
+	{
+		cout << "The equation has one root.\n\n";
+	}
+	else if (d < 0)
+	{
+		cout << "The equation has two complex roots.\n\n";
+	}
+	else
+	{
+		cout << "The equation has two real roots.\n\n";
+	}
+
+	cout << "The roots of the quadratic equation are x = ";
+	cout << negative_root << ", " << positive_root << ".\n";
 }
