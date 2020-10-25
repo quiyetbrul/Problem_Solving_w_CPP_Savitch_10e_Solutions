@@ -10,9 +10,11 @@
 #include "Ch3_Practice_Program_5.h"
 #include "Ch3_Practice_Program_6.h"
 #include "Ch3_Practice_Program_7.h"
-#include "Ch3_Programming_Program_1.h"
-#include "Ch3_Programming_Program_2.h"
-#include "Ch3_Programming_Program_3.h"
+#include "Ch3_Programming_Project_1.h"
+#include "Ch3_Programming_Project_2.h"
+#include "Ch3_Programming_Project_3.h"
+#include "Ch3_Programming_Project_4.h"
+#include "Ch3_Programming_Project_5.h"
 
 
 using namespace std;
@@ -35,6 +37,8 @@ int Chapter_3()
 		cout << "8. Programming_Project_1" << endl;
 		cout << "9. Programming_Project_2" << endl;
 		cout << "10. Programming_Project_3" << endl;
+		cout << "11. Programming_Project_4" << endl;
+		cout << "12. Programming_Project_5" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		int option = inputInteger("Option: ", 0, 21);
@@ -49,9 +53,11 @@ int Chapter_3()
 		case 5: Ch3_Practice_Program_5(); break;
 		case 6: Ch3_Practice_Program_6(); break;
 		case 7: Ch3_Practice_Program_7(); break;
-		case 8: Ch3_Programming_Program_1(); break;
-		case 9: Ch3_Programming_Program_2(); break;
-		case 10: Ch3_Programming_Program_3(); break;
+		case 8: Ch3_Programming_Project_1(); break;
+		case 9: Ch3_Programming_Project_2(); break;
+		case 10: Ch3_Programming_Project_3(); break;
+		case 11: Ch3_Programming_Project_4(); break;
+		case 12: Ch3_Programming_Project_5(); break;
 		case 0: exit(0);
 		default: cout << "Ch3_Menu: ERROR SELECTION" << endl; break;
 		}
