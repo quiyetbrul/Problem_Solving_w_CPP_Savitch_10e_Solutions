@@ -15,7 +15,7 @@ double call_cost(double minutes, double rates){
     return minutes * rates;
 }
 
-void Ch3_Programming_Program_1(){
+void Ch3_Programming_Project_1(){
     string day = "";
     double call_rate;
 

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Ch3_Programming_Program_2(){
+void Ch3_Programming_Project_2(){
     double a = inputDouble("Enter the value of a: ");
 	double b = inputDouble("Enter the value of b: ");
 	double c = inputDouble("Enter the value of c: ");
