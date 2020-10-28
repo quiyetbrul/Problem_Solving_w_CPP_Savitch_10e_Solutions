@@ -10,22 +10,20 @@ void Ch3_Programming_Project_11(){
     int temperature = inputInteger("Enter temperature: ", 0, 999);
 
     cout << "Initial input: " << temperature << endl;
-    int temp_arr[3];
-    temp_arr[0] = (temperature/100) %10;
-    temp_arr[1] = (temperature/10) %10;
-    temp_arr[2] = temperature % 10;
 
-    cout << "Printing each number: ";
-    for(auto i : temp_arr) cout << i << " ";
-
-    cout << endl;
+    // int temp_arr[3];
+    // temp_arr[0] = (temperature/100) %10;
+    // temp_arr[1] = (temperature/10) %10;
+    // temp_arr[2] = temperature % 10;
+    // cout << "Printing each number: ";
+    // for(auto i : temp_arr) cout << i << " ";
+    // cout << endl;
 
     if(!contains_147(temperature)) cout << temperature;
     else{
         cout << "Minimum: " << find_minimum(temperature) << endl 
              << "Maximum: " << find_maximum(temperature) << endl;
     }
-
 }
 
 int find_minimum(int temp){
