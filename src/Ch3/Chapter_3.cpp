@@ -20,6 +20,7 @@
 #include "Ch3_Programming_Project_8.h"
 #include "Ch3_Programming_Project_9.h"
 #include "Ch3_Programming_Project_10.h"
+#include "Ch3_Programming_Project_11.h"
 
 using namespace std;
 
@@ -48,6 +49,7 @@ int Chapter_3()
 		cout << "15. Programming_Project_8" << endl;
 		cout << "16. Programming_Project_9" << endl;
 		cout << "17. Programming_Project_10" << endl;
+		cout << "18. Programming_Project_11" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		int option = inputInteger("Option: ", 0, 21);
@@ -72,6 +74,7 @@ int Chapter_3()
 		case 15: Ch3_Programming_Project_8(); break;
 		case 16: Ch3_Programming_Project_9(); break;
 		case 17: Ch3_Programming_Project_10(); break;
+		case 18: Ch3_Programming_Project_11(); break;
 		case 0: exit(0);
 		default: cout << "Ch3_Menu: ERROR SELECTION" << endl; break;
 		}
