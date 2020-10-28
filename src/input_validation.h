@@ -12,11 +12,19 @@
 using namespace std;
 
 //return an input string
-//this needs some work
-string inputString(string prompt, string input) {
-    cout << prompt;
-    cin >> input;
 
+string inputString(string prompt) {
+    string input;
+    do {
+        cout << prompt;
+        if (!(cin >> input)) {
+            cout << "ERROR-1A: Invalid input. Must be a string type.\n";
+            cin.clear();
+            cin.ignore(999, '\n');
+        }
+        else
+            break;
+    } while (true);
     return input;
 }
 
