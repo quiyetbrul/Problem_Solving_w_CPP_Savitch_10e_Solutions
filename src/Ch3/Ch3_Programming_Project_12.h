@@ -11,6 +11,10 @@ void Ch3_Programming_Project_12(){
 
     do{
         int user = inputInteger("User picks up toothpicks: ", 1, 3);
+        while(user > toothpicks){
+            cout << "ERROR_Ch3_Programming_Project_12: Must be less than the number of tootpicks left." << endl << endl;
+            user = inputInteger("User picks up toothpicks: ", 1, 3);
+        }
         toothpicks -= user;
 
         if (toothpicks > 4){
