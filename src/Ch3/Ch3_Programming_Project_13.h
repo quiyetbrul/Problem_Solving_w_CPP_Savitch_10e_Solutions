@@ -1,9 +1,10 @@
 #include <iostream>
+#include <set>
 
 using namespace std;
 
 // this could be used for different_numbers, three_times, and sum_number
-vector<int> separate_number(int number);
+int *separate_number(int number);
 
 bool different_numbers(int number);
 bool three_times(int number);
@@ -11,7 +12,7 @@ bool odd_number(int number);
 int sum_number(int number);
 
 void Ch3_Programming_Project_13(){
-    // correct answer is 9738 || 9837
+    // correct answer is 9837
 
     int address_number = inputInteger("Guess an address number: ", 1000,9999);
 
@@ -45,9 +46,9 @@ void Ch3_Programming_Project_13(){
 }
 
 // this could be used for different_numbers, three_times, and sum_number
-// how do i use a function that returns a vector?
-vector<int> separate_number(int number){
-    vector<int> temp_arr = {
+// how do i use a function that returns a static array?
+int *separate_number(int number){
+    static int temp_arr[4] = {
         (number % 10),       // ones
         (number / 10) % 10,  // tens
         (number / 100) % 10, // hundreds
@@ -57,21 +58,15 @@ vector<int> separate_number(int number){
     return temp_arr;
 }
 
-// different_numbers(int number) is a bit wonky.
-// should return false if there're adjacent AND non-adjacent duplicate numbers,
-    // e.g. 1123, 1223, 1233, 1231, 1213, etc.
-// currently returns true for non-adjacent duplicate numbers,
-    // e.g. 1231
-bool different_numbers(int number){
-    vector<int> temp_arr = {
+bool different_numbers(int number){  
+    int temp_arr[4] = {
         (number % 10),       // ones
         (number / 10) % 10,  // tens
         (number / 100) % 10, // hundreds
         (number / 1000)      // thousands
     };
-    
-    auto dif = unique(temp_arr.begin(), temp_arr.end());
-    return dif==temp_arr.end();
+
+    return set<int>( temp_arr, temp_arr+4 ).size() == 4;
 }
 
 bool three_times(int number){
