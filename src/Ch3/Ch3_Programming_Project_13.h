@@ -13,9 +13,13 @@ int sum_number(int number);
 
 void Ch3_Programming_Project_13(){
     // correct answer is 9837
+    // potential problem: a digit could lead with a 0
     int address_number = inputInteger("Guess an address number: ", 1000,9999);
 
-    while (!different_numbers(address_number) || !three_times(address_number) || !odd_number(address_number) || sum_number(address_number) != 27){
+    while (!different_numbers(address_number) || 
+           !three_times(address_number)       || 
+           !odd_number(address_number)        || 
+           sum_number(address_number) != 27)    {
         cout << "Sum of the guess: " << sum_number(address_number) << endl << endl;
     
         cout << "INCORRECT GUESS." << endl;
