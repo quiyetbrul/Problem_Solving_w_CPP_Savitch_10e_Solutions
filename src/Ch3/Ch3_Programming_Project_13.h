@@ -39,9 +39,9 @@ void Ch3_Programming_Project_13(){
 // this could be used for different_numbers, three_times, and sum_number
 vector<int> separate_number(int number){
     vector<int> temp_arr;
-    temp_arr[0] = (number / 100) % 10; // ones
+    temp_arr[0] = number % 10;         // ones
     temp_arr[1] = (number / 10) % 10;  // tens
-    temp_arr[2] = number % 10;         // hundreds
+    temp_arr[2] = (number / 100) % 10; // hundreds
     temp_arr[3] = number / 1000;       // thousands
 
     return temp_arr;
@@ -50,9 +50,9 @@ vector<int> separate_number(int number){
 // different_numbers is a bit wonky.
 bool different_numbers(int number){
     int temp_arr[4];
-    temp_arr[0] = (number / 100) % 10; // ones
+    temp_arr[0] = number % 10;         // ones
     temp_arr[1] = (number / 10) % 10;  // tens
-    temp_arr[2] = number % 10;         // hundreds
+    temp_arr[2] = (number / 100) % 10; // hundreds
     temp_arr[3] = number / 1000;       // thousands
 
     return temp_arr[0] != temp_arr[1] != temp_arr[2] != temp_arr[3];
