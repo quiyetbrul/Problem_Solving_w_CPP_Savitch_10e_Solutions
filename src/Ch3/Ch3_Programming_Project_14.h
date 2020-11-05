@@ -2,6 +2,14 @@
 
 using namespace std;
 
+void results(int candy, int edoc, int margorp){
+        cout << "resulting in" << endl
+             << "\t" << candy << " candy, "
+             << edoc << " Edoc, and "
+             << margorp << " Margorp." << endl
+             << endl;
+}
+
 void Ch3_Programming_Project_14(){
         int candy = 71, candy_to_evolve = 12, edoc = 53, margorp = 0, evolve = 0, evolve_exp = 500, exp = 0;
         int transfer[2];
@@ -20,12 +28,8 @@ void Ch3_Programming_Project_14(){
                 margorp -= transfer[1]; // transfer edoc out
                 candy += transfer[1];   // each transfer gives 1 candy back
 
-                cout << "Transfer " << transfer[0] << " Edoc and " << transfer[1] << " Margorp "
-                     << "resulting in" << endl
-                     << "\t" << candy << " candy, "
-                     << edoc << " Edoc, and "
-                     << margorp << " Margorp." << endl
-                     << endl;
+                cout << "Transfer " << transfer[0] << " Edoc and " << transfer[1] << " Margorp ";
+                results(candy, edoc, margorp);
 
                 evolve = inputInteger("Evolve Edoc: ", 0, edoc);
                 candy -= (evolve * candy_to_evolve); // each evolution requires 12 candies
@@ -34,12 +38,8 @@ void Ch3_Programming_Project_14(){
                 margorp += evolve;                   // evolve edoc into margorp
                 candy += evolve;                     // each evolution gives 1 candy back
 
-                cout << "Evolve " << evolve << " Edoc to get " << exp << " experience points and "
-                     << "resulting in" << endl
-                     << "\t" << candy << " candy, "
-                     << edoc << " Edoc, and "
-                     << margorp << " Margorp." << endl
-                     << endl;
+                cout << "Evolve " << evolve << " Edoc to get " << exp << " experience points and ";
+                results(candy, edoc, margorp);
         }
 
         cout << "Total experience points = " << exp << endl;
