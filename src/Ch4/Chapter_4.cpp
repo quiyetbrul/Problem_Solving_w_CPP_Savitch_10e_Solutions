@@ -5,7 +5,7 @@ using namespace std;
 
 #include "Ch4_Practice_Program_1.h"
 #include "Ch4_Practice_Program_2.h"
-// #include "Ch4_Practice_Program_3.h"
+#include "Ch4_Practice_Program_3.h"
 // #include "Ch4_Practice_Program_4.h"
 // #include "Ch4_Practice_Program_5.h"
 // #include "Ch4_Practice_Program_6.h"
@@ -60,7 +60,7 @@ int Chapter_4()
 		switch (option) {
 		case 1: Ch4_Practice_Program_1(); break;
 		case 2: Ch4_Practice_Program_2(); break;
-		// case 3: Ch4_Practice_Program_3(); break;
+		case 3: Ch4_Practice_Program_3(); break;
 		// case 4: Ch4_Practice_Program_4(); break;
 		// case 5: Ch4_Practice_Program_5(); break;
 		// case 6: Ch4_Practice_Program_6(); break;
