@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include <vector>
 
 using namespace std;
@@ -8,10 +9,10 @@ using namespace std;
 #include "Ch4_Practice_Program_3.h"
 #include "Ch4_Practice_Program_4.h"
 #include "Ch4_Practice_Program_5.h"
-// #include "Ch4_Practice_Program_6.h"
-// #include "Ch4_Practice_Program_7.h"
-// #include "Ch4_Practice_Program_8.h"
-// #include "Ch4_Practice_Program_9.h"
+#include "Ch4_Practice_Program_6.h"
+#include "Ch4_Practice_Program_7.h"
+#include "Ch4_Practice_Program_8.h"
+#include "Ch4_Practice_Program_9.h"
 // #include "Ch4_Programming_Project_1.h"
 // #include "Ch4_Programming_Project_2.h"
 // #include "Ch4_Programming_Project_3.h"
@@ -63,10 +64,10 @@ int Chapter_4()
 		case 3: Ch4_Practice_Program_3(); break;
 		case 4: Ch4_Practice_Program_4(); break;
 		case 5: Ch4_Practice_Program_5(); break;
-		// case 6: Ch4_Practice_Program_6(); break;
-		// case 7: Ch4_Practice_Program_7(); break;
-		// case 8: Ch4_Practice_Program_8(); break;
-		// case 9: Ch4_Practice_Program_9(); break;
+		case 6: Ch4_Practice_Program_6(); break;
+		case 7: Ch4_Practice_Program_7(); break;
+		case 8: Ch4_Practice_Program_8(); break;
+		case 9: Ch4_Practice_Program_9(); break;
 		// case 10: Ch4_Programming_Project_1(); break;
 		// case 11: Ch4_Programming_Project_2(); break;
 		// case 12: Ch4_Programming_Project_3(); break;
