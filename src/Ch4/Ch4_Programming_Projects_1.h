@@ -3,7 +3,7 @@
 using namespace std;
 
 double annual_mortgage_cost(double initial_loan_balance){
-    return initial_loan_balance .09;
+    return initial_loan_balance * .09;
 }
 
 double tax_savings(double initial_loan_balance){
