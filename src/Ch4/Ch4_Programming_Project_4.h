@@ -2,11 +2,11 @@
 
 using namespace std;
 
-void beer_song(int);
-void print_lyric(string);
-string tens(int);
-string teens(int);
-string ones(int);
+void beer_song(int number);
+void print_lyric(string number);
+string tens(int number);
+string teens(int number);
+string ones(int number);
 
 void beer_song(int number){
     if(number == 10 || number > 19){
