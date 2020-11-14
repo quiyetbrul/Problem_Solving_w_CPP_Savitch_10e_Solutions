@@ -18,7 +18,7 @@ using namespace std;
 #include "Ch4_Programming_Project_3.h"
 #include "Ch4_Programming_Project_4.h"
 #include "Ch4_Programming_Project_5.h"
-// #include "Ch4_Programming_Project_6.h"
+#include "Ch4_Programming_Project_6.h"
 // #include "Ch4_Programming_Project_7.h"
 // #include "Ch4_Programming_Project_8.h"
 // #include "Ch4_Programming_Project_9.h"
@@ -73,7 +73,7 @@ int Chapter_4()
 		case 12: Ch4_Programming_Project_3(); break;
 		case 13: Ch4_Programming_Project_4(); break;
 		case 14: Ch4_Programming_Project_5(); break;
-		// case 15: Ch4_Programming_Project_6(); break;
+		case 15: Ch4_Programming_Project_6(); break;
 		// case 16: Ch4_Programming_Project_7(); break;
 		// case 17: Ch4_Programming_Project_8(); break;
 		// case 18: Ch4_Programming_Project_9(); break;
