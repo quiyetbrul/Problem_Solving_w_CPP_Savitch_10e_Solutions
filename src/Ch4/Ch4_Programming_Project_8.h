@@ -8,7 +8,7 @@ bool containsDigit(int number, int digit)
 	int b = (number / 10) % 10; //b is 8
 	int c = number % 10; //c is 2
 
-    return (a == digit || b == digit || c == digit))
+    return (a == digit || b == digit || c == digit);
 }
 void Ch4_Programming_Project_8()
 {
