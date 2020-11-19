@@ -21,7 +21,7 @@ using namespace std;
 #include "Ch4_Programming_Project_6.h"
 #include "Ch4_Programming_Project_7.h"
 #include "Ch4_Programming_Project_8.h"
-// #include "Ch4_Programming_Project_9.h"
+#include "Ch4_Programming_Project_9.h"
 // #include "Ch4_Programming_Project_10.h"
 
 
@@ -76,7 +76,7 @@ int Chapter_4()
 		case 15: Ch4_Programming_Project_6(); break;
 		case 16: Ch4_Programming_Project_7(); break;
 		case 17: Ch4_Programming_Project_8(); break;
-		// case 18: Ch4_Programming_Project_9(); break;
+		case 18: Ch4_Programming_Project_9(); break;
 		// case 19: Ch4_Programming_Project_10(); break;
 		case 0: exit(0);
 		default: cout << "Ch4_Menu: ERROR SELECTION" << endl; break;
