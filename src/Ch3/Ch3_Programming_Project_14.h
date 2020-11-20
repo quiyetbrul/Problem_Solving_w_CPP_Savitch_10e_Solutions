@@ -19,7 +19,7 @@ void Ch3_Programming_Project_14(){
         // evolution earns 500 exp
         // edoc/margorp transfer gives 1 candy
 
-        while (candy > 0 & edoc > 1){
+        while (candy > 0 && edoc > 1){
                 transfer[0] = inputInteger("Transfer Edoc: ", 0, edoc);
                 edoc -= transfer[0];  // transfer edoc out
                 candy += transfer[0]; // each transfer gives 1 candy back
