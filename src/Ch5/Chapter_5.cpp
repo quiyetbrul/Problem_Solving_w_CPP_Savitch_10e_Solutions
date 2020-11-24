@@ -11,13 +11,12 @@ using namespace std;
 #include "Ch5_Practice_Program_7.h"
 #include "Ch5_Practice_Program_8.h"
 #include "Ch5_Practice_Program_9.h"
+#include "Ch5_Programming_Project_1.h"
 
-int Chapter_5()
-{
-	do
-	{
+int Chapter_5(){
+	do{
 		cout << endl;
-
+		
 		cout << "Chapter 5 Solutions" << endl;
 		cout << "==============================" << endl;
 		cout << "1. Practice_Program_1" << endl;
@@ -29,6 +28,7 @@ int Chapter_5()
 		cout << "7. Practice_Program_7" << endl;
 		cout << "8. Practice_Program_8" << endl;
 		cout << "9. Practice_Program_9" << endl;
+		cout << "10. Programming_Project_1" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		int option = inputInteger("Option: ", 0, 19);
@@ -45,6 +45,7 @@ int Chapter_5()
 			case 7: Ch5_Practice_Program_7(); break;
 			case 8: Ch5_Practice_Program_8(); break;
 			case 9: Ch5_Practice_Program_9(); break;
+			case 10: Ch5_Programming_Project_1(); break;
 			case 0: exit(0);
 			default: cout << "Ch5_Menu: ERROR SELECTION" << endl; break;
 		}
