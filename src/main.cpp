@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
         case 4: Chapter_4(); break;
         case 5: Chapter_5(); break;
         case 0: exit(0);
-        default: cout << "-- ERROR MAIN MENU --" << endl;break;
+        default: cout << "-- ERROR MAIN MENU --" << endl << endl; break;
         }
     } while (true);
 
