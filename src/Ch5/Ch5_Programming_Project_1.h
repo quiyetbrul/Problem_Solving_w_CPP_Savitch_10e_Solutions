@@ -37,4 +37,7 @@ void time_output(int& hour, int& minute, string& AmPm){
 }
 
 void Ch5_Programming_Project_1(){
+    int hour = 0, minute = 0;
+    string AmPm = " ";
+    time_output(hour,minute,AmPm);
 }
