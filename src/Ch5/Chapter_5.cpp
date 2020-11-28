@@ -13,6 +13,7 @@ using namespace std;
 #include "Ch5_Practice_Program_9.h"
 #include "Ch5_Programming_Project_1.h"
 #include "Ch5_Programming_Project_2.h"
+#include "Ch5_Programming_Project_3.h"
 
 int Chapter_5(){
 	do{
@@ -31,6 +32,7 @@ int Chapter_5(){
 		cout << "9. Practice_Program_9" << endl;
 		cout << "10. Programming_Project_1" << endl;
 		cout << "11. Programming_Project_2" << endl;
+		cout << "12. Programming_Project_3" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		int option = inputInteger("Option: ", 0, 19);
@@ -49,6 +51,7 @@ int Chapter_5(){
 			case 9: Ch5_Practice_Program_9(); break;
 			case 10: Ch5_Programming_Project_1(); break;
 			case 11: Ch5_Programming_Project_2(); break;
+			case 12: Ch5_Programming_Project_3(); break;
 			case 0: exit(0);
 			default: cout << "Ch5_Menu: ERROR SELECTION" << endl; break;
 		}
