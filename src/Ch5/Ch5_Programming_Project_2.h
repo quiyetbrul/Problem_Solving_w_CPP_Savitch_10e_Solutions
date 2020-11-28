@@ -4,7 +4,7 @@ using namespace std;
 
 void time_input(int& hour, int& minute);
 
-void calc_time_waiting(int& hour_difference, int& minute_difference){
+void calc_time_waiting_24h(int& hour_difference, int& minute_difference){
     int hour_now, minute_now, hour_later, minute_later;
     time_input(hour_now, minute_now);
     time_input(hour_later, minute_later);
@@ -21,7 +21,7 @@ void calc_time_waiting(int& hour_difference, int& minute_difference){
 
 void Ch5_Programming_Project_2(){
     int hour_difference = 0, minute_difference = 0;
-    calc_time_waiting(hour_difference, minute_difference);
+    calc_time_waiting_24h(hour_difference, minute_difference);
     cout << hour_difference  << " hours and " 
          << minute_difference << " minutes waiting time"<< endl;
 }
