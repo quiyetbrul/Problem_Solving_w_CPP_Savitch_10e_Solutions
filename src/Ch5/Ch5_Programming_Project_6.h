@@ -9,68 +9,55 @@ void shoot(bool &target_alive, double accuracy)
 }
 void start_duel(int n, bool &aaron_alive, bool &bob_alive, bool &charlie_alive)
 {
-    int win_aaron = 0, 
-        win_bob = 0, 
+    int win_aaron = 0,
+        win_bob = 0,
         win_charlie = 0;
-    double probability_aaron = 1.0 / 3, 
-           probability_bob = 1.0 / 2, 
+    double probability_aaron = 1.0 / 3,
+           probability_bob = 1.0 / 2,
            probability_charlie = 1.0;
 
     for (int i = 0; i < n; i++)
     {
         if (aaron_alive == true)
         {
-            if (charlie_alive == true)
-            {
-                shoot(charlie_alive, probability_aaron);
-            }
-            else
-            {
+            charlie_alive == true ? 
+                shoot(charlie_alive, probability_aaron) : 
                 shoot(bob_alive, probability_aaron);
-            }
         }
         if (bob_alive == true)
         {
-            if (charlie_alive == true)
-            {
-                shoot(charlie_alive, probability_bob);
-            }
-            else
-            {
+            charlie_alive == true ?
+                shoot(charlie_alive, probability_bob) :
                 shoot(aaron_alive, probability_bob);
-            }
         }
         if (charlie_alive == true)
         {
-            if (bob_alive == true)
-            {
-                shoot(bob_alive, probability_charlie);
-            }
-            else
-            {
+            bob_alive == true ?
+                shoot(bob_alive, probability_charlie) :
                 shoot(aaron_alive, probability_charlie);
-            }
         }
 
         //ANNOUNCE + SCORES//
         if (aaron_alive && !bob_alive && !charlie_alive)
         {
-            cout << "\nAaron won.";
+            cout << "Aaron won." << endl;
             win_aaron++;
         }
         else if (!aaron_alive && bob_alive && !charlie_alive)
         {
-            cout << "\nBob won.";
+            cout << "Bob won." << endl;
             win_bob++;
         }
         else
         {
-            cout << "\nCharlie won.";
+            cout << "Charlie won." << endl;
             win_charlie++;
         }
     }
 
-    cout << "\n\nAaron's score: " << win_aaron << endl;
+    cout << endl << endl;
+
+    cout << "Aaron's score: " << win_aaron << endl;
     cout << "Bob's score: " << win_bob << endl;
     cout << "Charlie's score: " << win_charlie << endl;
 }
