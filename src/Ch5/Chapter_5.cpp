@@ -17,6 +17,8 @@ using namespace std;
 #include "Ch5_Programming_Project_4.h"
 #include "Ch5_Programming_Project_5.h"
 #include "Ch5_Programming_Project_6.h"
+#include "Ch5_Programming_Project_7.h"
+#include "Ch5_Programming_Project_8.h"
 
 int Chapter_5(){
 	do{
@@ -39,6 +41,8 @@ int Chapter_5(){
 		cout << "13. Programming_Project_4" << endl;
 		cout << "14. Programming_Project_5" << endl;
 		cout << "15. Programming_Project_6" << endl;
+		cout << "16. Programming_Project_7" << endl;
+		cout << "17. Programming_Project_8" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		int option = inputInteger("Option: ", 0, 19);
@@ -61,6 +65,8 @@ int Chapter_5(){
 			case 13: Ch5_Programming_Project_4(); break;
 			case 14: Ch5_Programming_Project_5(); break;
 			case 15: Ch5_Programming_Project_6(); break;
+			case 16: Ch5_Programming_Project_7(); break;
+			case 17: Ch5_Programming_Project_8(); break;
 			case 0: exit(0);
 			default: cout << "Ch5_Menu: ERROR SELECTION" << endl; break;
 		}
