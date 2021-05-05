@@ -66,10 +66,10 @@ void Ch4_Programming_Project_9()
 
 // takes in minimum and maximum range of numbers
 // returns randomized number within given range
-int random_number(int lo, int hi)
-{
-    return rand() % (hi - lo) + lo;
-}
+// int random_number(int lo, int hi)
+// {
+//     return rand() % (hi - lo) + lo;
+// }
 
 // takes in the team and the randomized number
 // returns which team is drafted

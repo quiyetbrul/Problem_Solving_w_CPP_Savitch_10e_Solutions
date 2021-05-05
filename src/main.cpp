@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "input_validation.h"
+#include "random_number.h"
 #include "Ch2/retroactive_salary.h"
 #include "Ch4/find_mpg.h"
 

@@ -57,7 +57,7 @@ int get_century_value(int year)
 	int remainder = firstTwoDigits % 4;
 	return (3 - remainder) * 2;
 }
-int getYearValue(int year)
+int get_year_value(int year)
 {
 	int lastTwoDigits = year % 100;
 	int value = lastTwoDigits / 4;
@@ -69,7 +69,7 @@ void Ch5_Programming_Project_7()
 	int month = 0, day = 0, year = 0;
 	get_input(month, day, year);
 
-	int dayOfWeek = (day + get_month_value(month, year) + getYearValue(year) + get_century_value(year)) % 7;
+	int dayOfWeek = (day + get_month_value(month, year) + get_year_value(year) + get_century_value(year)) % 7;
 	
 	cout << "The day of the week is ";
 
