@@ -22,8 +22,8 @@ void Ch5_Programming_Project_9(){
     vector<int> human_rolls;
     vector<int> house_rolls;
 
-    // human_card_total = std::accumulate(human_rolls.begin(), human_rolls.end(), decltype(vector)::value_type(0));
-    // house_card_total = std::accumulate(house_rolls.begin(), house_rolls.end(), decltype(vector)::value_type(0));
+    // human_card_total = std::accumulate(human_rolls.begin(), human_rolls.end(), decltype(human_card_total)::value_type(0));
+    // house_card_total = std::accumulate(house_rolls.begin(), house_rolls.end(), decltype(house_card_total)::value_type(0));
 
     // char ans = ' ';
 
