@@ -19,17 +19,24 @@ void Ch5_Programming_Project_9(){
     double human_wager = 0;
     int human_card_total = 0;
     int house_card_total = 0;
-    
+    vector<int> human_rolls;
+    vector<int> house_rolls;
+
+    // human_card_total = std::accumulate(human_rolls.begin(), human_rolls.end(), decltype(vector)::value_type(0));
+    // house_card_total = std::accumulate(house_rolls.begin(), house_rolls.end(), decltype(vector)::value_type(0));
+
     // char ans = ' ';
-    
+
     // while(human_money > 0 || ans == 'y'){
         cout << "You have $" << human_money << endl;
         get_human_wager(human_wager, human_money);
 
-        // disregard card face. 
-        int card_ptr1 = random_number(0,11), card_ptr2 = random_number(0,11);
-        cout << "Human roll: " << CARD_FACE[card_ptr1] << " " << CARD_FACE[card_ptr2] << endl;
-        human_card_total = card_ptr1 + card_ptr2;
+        // disregard card face.
+        human_rolls.push_back(random_number(0,11));
+        human_rolls.push_back(random_number(0,11));
+        // int card_ptr1 = random_number(0,11), card_ptr2 = random_number(0,11);
+        // cout << "Human roll: " << CARD_FACE[card_ptr1] << " " << CARD_FACE[card_ptr2] << endl;
+        // human_card_total = card_ptr1 + card_ptr2;
         cout << "Human roll total: " << human_card_total << endl;
         house_card_total = random_number(1,11);
         cout << "House card: " << house_card_total << endl;

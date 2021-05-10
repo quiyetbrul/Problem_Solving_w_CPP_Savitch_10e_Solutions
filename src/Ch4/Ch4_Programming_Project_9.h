@@ -59,7 +59,8 @@ void Ch4_Programming_Project_9()
 
     cout << endl;
 
-    for(int i = 0; i < TEAM.size(); i ++){
+    int size = TEAM.size();
+    for(int i = 0; i < size; i ++){
         cout << TEAM[i] << " picked " << team_count[i] << " people." << endl;
     }
 }

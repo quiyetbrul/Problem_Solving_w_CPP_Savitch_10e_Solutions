@@ -10,7 +10,8 @@ const vector<string> WATER{"Cancer", "Scorpio", "Pisces"};
 
 void zodiac_element(vector<string> vect)
 {
-    for (int i = 0; i < vect.size(); i++)
+    int size = vect.size();
+    for (int i = 0; i < size; i++)
     {
         cout << "\t" << vect[i] << endl;
     }

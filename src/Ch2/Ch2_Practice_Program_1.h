@@ -15,6 +15,9 @@ void Ch2_Practice_Program_1() {
 		//prompt user for cereal boxes
 		cereal_boxes = inputInteger("Enter number of boxes: ", true);
 
+		cout << "Cereal weight entered: " << cereal_weight << endl;
+		cout << "Cereal boxes entered: " << cereal_boxes << endl;
+
 		//prompt user for iteration
 		ans = inputChar("Repeat (y/n)? ", 'y', 'n');
 	} while (ans == 'y');

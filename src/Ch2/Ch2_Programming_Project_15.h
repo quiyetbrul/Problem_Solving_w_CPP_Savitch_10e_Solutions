@@ -12,5 +12,7 @@ void Ch2_Programming_Project_15() {
 	displacement_meters = inputDouble("Enter displacement length (meters): ", true);
 	temperature_celsius_change = inputDouble("Enter temperature change (celsius): ", true);
 
+	length_initial = coefficient_linear_expression * displacement_meters * temperature_celsius_change;
 	cout << (length_initial > 0 ? "The material will expand by the displacement in meters " : "The material will contract by ") << length_initial;
+	
 }
