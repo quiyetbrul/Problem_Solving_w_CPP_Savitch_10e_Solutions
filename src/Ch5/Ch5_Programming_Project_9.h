@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include <numeric>
 
 using namespace std;
 
 // maybe change to struct
-const vector<char> CARD_FACE{'A', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K'};
+// const vector<char> CARD_FACE{'A', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K'};
 const vector<int> CARD_VALUE{11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10};
 
 int random_number(int lo, int hi);
@@ -14,6 +16,10 @@ bool is_bust(int& card_total);
 
 void find_winner(int& human_card_total, int& house_card_total, double& human_money, double& human_wager);
 
+void show_cards(vector<int> vect, bool human_turn);
+
+int get_total_vector(vector<int> vect, int& player_total);
+
 void Ch5_Programming_Project_9(){
     double human_money = 100.00;
     double human_wager = 0;
@@ -22,24 +28,27 @@ void Ch5_Programming_Project_9(){
     vector<int> human_rolls;
     vector<int> house_rolls;
 
-    // human_card_total = std::accumulate(human_rolls.begin(), human_rolls.end(), decltype(human_card_total)::value_type(0));
-    // house_card_total = std::accumulate(house_rolls.begin(), house_rolls.end(), decltype(house_card_total)::value_type(0));
-
     // char ans = ' ';
 
-    // while(human_money > 0 || ans == 'y'){
+    // while(human_money > 0 && ans == 'y'){
         cout << "You have $" << human_money << endl;
         get_human_wager(human_wager, human_money);
+
+        cout << endl;
 
         // disregard card face.
         human_rolls.push_back(random_number(0,11));
         human_rolls.push_back(random_number(0,11));
-        // int card_ptr1 = random_number(0,11), card_ptr2 = random_number(0,11);
-        // cout << "Human roll: " << CARD_FACE[card_ptr1] << " " << CARD_FACE[card_ptr2] << endl;
-        // human_card_total = card_ptr1 + card_ptr2;
+        show_cards(human_rolls, true);
+        get_total_vector(human_rolls, human_card_total);
         cout << "Human roll total: " << human_card_total << endl;
-        house_card_total = random_number(1,11);
-        cout << "House card: " << house_card_total << endl;
+
+        cout << endl;
+
+        house_rolls.push_back(random_number(0,11));
+        show_cards(house_rolls, false);
+        get_total_vector(house_rolls, house_card_total);
+        cout << "House roll total: " << house_card_total << endl;
 
         //loop while !is_bust
         // if(human_card_total<21 || house_card_total <21) ask hit_stand
@@ -53,6 +62,16 @@ void Ch5_Programming_Project_9(){
     //     ans = inputChar("Play again (y/n)?: ", 'y', 'n');
     // }
 
+    cout << endl;
+}
+
+int get_total_vector(vector<int> vect, int& player_total){
+    return accumulate(vect.begin(), vect.end(), decltype(vect)::value_type(0));
+}
+
+void show_cards(vector<int> vect, bool human_turn){
+    cout << (!human_turn ? "House rolls: " : "Human rolls: ");
+    for(auto x : vect)  cout << x << " ";
     cout << endl;
 }
 
