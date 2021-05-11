@@ -25,42 +25,59 @@ void Ch5_Programming_Project_9(){
     double human_wager = 0;
     int human_card_total = 0;
     int house_card_total = 0;
-    vector<int> human_rolls;
-    vector<int> house_rolls;
+    vector<int> human_cards;
+    vector<int> house_cards;
 
-    // char ans = ' ';
+    char ans = ' ';
 
-    // while(human_money > 0 && ans == 'y'){
+    do{
         cout << "You have $" << human_money << endl;
         get_human_wager(human_wager, human_money);
 
         cout << endl;
 
         // disregard card face.
-        human_rolls.push_back(random_number(0,11));
-        human_rolls.push_back(random_number(0,11));
-        show_cards(human_rolls, true);
-        get_total_vector(human_rolls, human_card_total);
-        cout << "Human roll total: " << human_card_total << endl;
+        human_cards.push_back(random_number(1,11));
+        human_cards.push_back(random_number(1,11));
+        show_cards(human_cards, true);
+        get_total_vector(human_cards, human_card_total);
+        cout << "Human card total: " << human_card_total << endl;
 
         cout << endl;
 
-        house_rolls.push_back(random_number(0,11));
-        show_cards(house_rolls, false);
-        get_total_vector(house_rolls, house_card_total);
-        cout << "House roll total: " << house_card_total << endl;
+        house_cards.push_back(random_number(1,11));
+        show_cards(house_cards, false);
+        get_total_vector(house_cards, house_card_total);
+        cout << "House card total: " << house_card_total << endl;
 
-        //loop while !is_bust
-        // if(human_card_total<21 || house_card_total <21) ask hit_stand
-        // else find_winner
-        //end loop
+        if (human_card_total >=21) find_winner(human_card_total, house_card_total, human_money, human_wager);
+        else{
+            do{
+                ans = inputChar("Play again (h/s)?: ", 'h', 's');
+                if(ans == 'h'){
+                        human_cards.push_back(random_number(1,11));
+                        show_cards(human_cards, true);
+                        get_total_vector(human_cards, human_card_total);
+                        cout << "Human card total: " << human_card_total << endl;
 
-        //create hit_stand function
-        find_winner(human_card_total, house_card_total, human_money, human_wager);
+                        cout << endl;
+                }
+            }while(human_card_total < 21 && ans == 'h');
 
+            if (human_card_total >=21) find_winner(human_card_total, house_card_total, human_money, human_wager);
+            else if (house_card_total < 17){
+                while(house_card_total < 17){
+                    house_cards.push_back(random_number(1,11));
+                    show_cards(house_cards, false);
+                    get_total_vector(house_cards, house_card_total);
+                    cout << "House card total: " << house_card_total << endl;
+                }
+                find_winner(human_card_total, house_card_total, human_money, human_wager);
+            }
+        }
         cout << "Wager: " << human_money << endl;
-    //     ans = inputChar("Play again (y/n)?: ", 'y', 'n');
-    // }
+        ans = inputChar("Play again (y/n)?: ", 'y', 'n');
+    }while(human_money > 0 && ans == 'y');
 
     cout << endl;
 }
@@ -70,7 +87,7 @@ int get_total_vector(vector<int> vect, int& player_total){
 }
 
 void show_cards(vector<int> vect, bool human_turn){
-    cout << (!human_turn ? "House rolls: " : "Human rolls: ");
+    cout << (!human_turn ? "House cards: " : "Human cards: ");
     for(auto x : vect)  cout << x << " ";
     cout << endl;
 }
@@ -111,6 +128,6 @@ void find_winner(int& human_card_total, int& house_card_total, double& human_mon
         human_money -= human_wager;
     }else if (house_card_total == human_card_total){
         cout << "Push!" << endl;
-    }else cout << "THERE WAS AN ERROR" << endl;
+    }else cout << "THERE WAS AN ERROR: find_winner()" << endl;
 }
 
