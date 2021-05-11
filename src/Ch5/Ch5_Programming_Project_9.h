@@ -83,7 +83,8 @@ void Ch5_Programming_Project_9(){
 }
 
 int get_total_vector(vector<int> vect, int& player_total){
-    return accumulate(vect.begin(), vect.end(), decltype(vect)::value_type(0));
+    player_total = accumulate(vect.begin(), vect.end(), decltype(vect)::value_type(0));
+    return player_total;
 }
 
 void show_cards(vector<int> vect, bool human_turn){
