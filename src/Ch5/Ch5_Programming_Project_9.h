@@ -5,9 +5,14 @@
 
 using namespace std;
 
+// NOTE: coded this without the given functions
+// Ch5_Programming_Project_10 is the same as this code.
+// I might do the same problem using the given functions.
+// Otherwise, I'll skip it.
+
 // maybe change to struct and create a multi-typed array
 // const vector<char> CARD_FACE{'A', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K'};
-const vector<int> CARD_VALUE{11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10};
+// const vector<int> CARD_VALUE{11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10};
 
 int random_number(int lo, int hi);
 double get_human_wager(double& human_wager, double& human_money);
