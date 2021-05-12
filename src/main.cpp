@@ -19,6 +19,7 @@ int main(int argc, char** argv) {
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
     cout.precision(2);
+    srand(time(NULL));
 
     do {
         cout << "Practice and Project Solutions" << endl;
